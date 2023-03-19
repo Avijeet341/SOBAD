@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:transitionName="logo"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="#Avi-jee"
+        android:textColor="@color/textColor"
+        android:textSize="45sp"
+        android:transitionName="logo_text"
+        />
+
+    <ImageView
+        android:id="@+id/img_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/background_bottom"
+        android:transitionName="img_tree"
+        />
+
+</RelativeLayout>
